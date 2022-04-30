@@ -17,6 +17,12 @@ app.get('/FullList', (request, response) => {
 	response.json(listaFull);
 });
 
+app.get('/HaveCertification', (request, response) => {
+	const listaCertificado = request.params.haveCertification;
+	const listaConCertificado = ExplorerController.getExplorersCertification(listaCertificado);
+	response.json({ Certificado: request.params.haveCertification, ExplorersConCertificado: listaConCertificado });
+});
+
 app.listen(port, () => {
 	console.log(`LaunchX API esta activo localhost:${port}`);
 });
