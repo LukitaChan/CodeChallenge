@@ -1,0 +1,16 @@
+{
+	"name": "code-challenge",
+	"version": "1.0.0",
+	"description": "CodeChallenge semana 4 ejercicio 5",
+	"main": "index.js",
+	"scripts": {
+		"server": "node index.js",
+		"nodemon": "nodemon index.js"
+	},
+	"author": "LukitaChan",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.1",
+		"nodemon": "^2.0.16"
+	}
+}
